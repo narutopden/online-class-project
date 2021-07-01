@@ -17,7 +17,7 @@ public class BaseCache {
             .initialCapacity(10)
             .maximumSize(100)
             .concurrencyLevel(5)
-            .expireAfterWrite(10, TimeUnit.SECONDS)
+            .expireAfterWrite(600, TimeUnit.SECONDS)
             .recordStats()
             .build();
 
